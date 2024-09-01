@@ -1,0 +1,111 @@
+.App {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  flex: 1;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-Soweditor {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.App-Soweditor .editor {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 90%;
+  /* height: 0; */
+}
+
+.App-Soweditor .left-panel {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 10%;
+  /* flex-basis: auto; */
+  /* flex-basis: 200px; */
+  /* height: 200px; */
+  /* flex: 1 1 auto; */
+  /* flex: 1; */
+}
+
+/* Editor {
+  display: flex;
+} */
+
+.app {
+  display: flex;
+}
+
+.app .file-tree {
+  flex-basis: 15%;
+  flex-grow: 1;
+  background-color: #282c34;
+}
+
+.app .editor {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 85%;
+  align-items: stretch;
+  height: 100%;
+}
+
+.editor .file-tabs {
+  display: flex;
+  flex-basis: 35px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.file-tabs .active {
+  background-color: #61dafb;
+}
+
+.editor #container {
+  /* flex-basis: auto; */
+  height: 800px;
+  flex-grow: 1;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
